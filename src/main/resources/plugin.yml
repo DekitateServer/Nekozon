@@ -1,0 +1,16 @@
+name: Nekozon
+main: com.dekitateserver.nekozon.NekozonPlugin
+version: 1.0.0-SNAPSHOT
+author: ken_kentan
+website: https://www.dekitateserver.com
+depend: [NekoLib, NekoEconomy]
+
+api-version: '1.13'
+
+commands:
+  nekozon:
+    description: Nekozonを開く
+    usage: /<command>
+    aliases: [nzon]
+    permission: nekozon
+    permission-message: §cこのコマンドを実行する権限がありません.
