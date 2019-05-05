@@ -63,11 +63,11 @@ class NekozonController(plugin: NekozonPlugin) : BaseController() {
                 return@launch
             }
 
-            player.playNyanSound()
             player.sendMessage("${Nekozon.PREFIX}§a${item.name}§aを${amount}個購入しました.")
 
             val itemStack = item.asItemStack(amount)
             withContext(Dispatchers.Bukkit) {
+                player.playNyanSound()
                 player.giveItemStack(itemStack)
             }
         }
